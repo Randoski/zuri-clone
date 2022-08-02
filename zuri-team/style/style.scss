@@ -1,0 +1,347 @@
+:root {
+    // Colors
+    --red: #eb5850;
+    --red-2: #e7332b;
+    --black: #514949;
+    --white: #ffffff;
+    --card-bg: #FFFAFA;
+
+    // Font
+    --font: 'Poppins', sans-serif;
+}   
+
+body {
+    color: var(--black);
+    font-family: var(--font);
+}
+ 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// Container
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-bg {
+    padding: 130px 0 80px;
+    background-image: url("../Images/hero-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+// Hero Section
+.hero-section {
+    margin-top: 80px;
+    h1 {
+        font-weight: 800px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    p {
+        margin-top: 48px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        .red-text {
+            color: var(--red);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    // CTA
+   .cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin: 60px 0 112px;
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 12px 24px;
+        }
+
+        .pry-cta {
+            background: var(--red-2);
+            color: white;
+            border: 1px solid var(--white);
+        }
+
+        .pry-cta:hover {
+            color: var(--red-2);
+            border: 1px solid var(--red-2);
+            background: var(--white);
+        }
+
+        .sec-cta {
+            color: var(--red-2);
+            border: 1px solid var(--red-2);
+        }
+
+        .sec-cta:hover {
+            color: var(--white);
+            background: var(--red-2);
+        }
+    }
+}
+
+// Hero Section 2
+.hero-section-2 {
+    margin-bottom: 120px;
+
+    .heading2-sub-text {
+        color: var(--red-2);
+        margin-bottom: 900px;
+    }
+
+    .heading2-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 60px;
+    }
+
+    .heading2-sub-text, .heading2-text {
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+    .heading2-sub {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        text-align: left;
+        margin-top: 52px;
+        
+        .sub {
+            background: var(--card-bg);
+            padding: 72px 32px 102px;
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 32px 0 24px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--red-2);
+            }
+        }
+    }
+}
+
+
+// Footer
+footer {
+    .footer-links {
+        .footer-heading, .socials-heading {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+            margin: 40px 0 16px;
+        }
+
+        a {
+            color: var(--red-2);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .address {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;        
+        }
+
+        .mail {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .socials-container {
+            gap: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .copyright {
+        margin: 88px 0 102px;
+        border-top: 1px solid var(--black);
+
+        p {
+            margin-top: 24px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+
+// Media Query
+
+// Tablet
+@media screen and (min-width: 770px) {
+
+.hero-bg {
+    padding-top: 80px;
+}
+
+.hero-section  {
+        .cta {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+footer {
+        
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .logo {
+        margin-top: 40px;
+    }
+}
+}     
+
+// Desktop 
+@media screen and (min-width: 1000px) {
+    header {
+        margin: 80px 0;
+    }
+
+    // Hero Section
+    .hero-section {
+
+        padding-bottom: 260px;
+
+        h1 {
+            font-size: 32px;
+            line-height: 48px;
+        }
+    
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 800px;
+
+            .red-text {
+                color: var(--red);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    //Hero Section 2
+    .hero-section-2 {
+
+        .heading2-sub-text {
+            font-size: 14px;
+        }
+
+        .heading2-text {
+            font-size: 18px;
+        }
+
+        .heading2-sub-text, .heading2-text {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        .heading2-sub {
+            margin-top: 48px;
+            flex-direction: row;
+            gap: 10px;
+            
+            .sub {
+                padding: 24px 12px;
+
+                img {
+                    height: 50px;
+                }
+
+                p {
+                    font-size: 13px;
+                    padding: 16px 0;
+                }
+
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 120px;
+
+        .footer-links {
+            .footer-heading, .socials-heading {
+                font-weight: 500;
+                font-size: 16px;
+            }
+
+            a {
+                font-size: 12px;
+            }
+
+            .address {
+                font-size: 12px;
+            }
+
+            .mail {
+                font-size: 12px;
+            }
+        }
+
+        .copyright {
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

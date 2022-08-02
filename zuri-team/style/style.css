@@ -1,1 +1,265 @@
-/*# sourceMappingURL=stlye.css.map */
+:root {
+  --red: #eb5850;
+  --red-2: #e7332b;
+  --black: #514949;
+  --white: #ffffff;
+  --card-bg: #FFFAFA;
+  --font: "Poppins", sans-serif;
+}
+
+body {
+  color: var(--black);
+  font-family: var(--font);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-bg {
+  padding: 130px 0 80px;
+  background-image: url("../Images/hero-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-section {
+  margin-top: 80px;
+}
+.hero-section h1 {
+  font-weight: 800px;
+  font-size: 28px;
+  line-height: 34px;
+}
+.hero-section p {
+  margin-top: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.hero-section p .red-text {
+  color: var(--red);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.hero-section .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 60px 0 112px;
+}
+.hero-section .cta a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+}
+.hero-section .cta .pry-cta {
+  background: var(--red-2);
+  color: white;
+  border: 1px solid var(--white);
+}
+.hero-section .cta .pry-cta:hover {
+  color: var(--red-2);
+  border: 1px solid var(--red-2);
+  background: var(--white);
+}
+.hero-section .cta .sec-cta {
+  color: var(--red-2);
+  border: 1px solid var(--red-2);
+}
+.hero-section .cta .sec-cta:hover {
+  color: var(--white);
+  background: var(--red-2);
+}
+
+.hero-section-2 {
+  margin-bottom: 120px;
+}
+.hero-section-2 .heading2-sub-text {
+  color: var(--red-2);
+  margin-bottom: 900px;
+}
+.hero-section-2 .heading2-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+.hero-section-2 .heading2-sub-text, .hero-section-2 .heading2-text {
+  max-width: 440px;
+  margin: 0 auto;
+}
+.hero-section-2 .heading2-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: left;
+  margin-top: 52px;
+}
+.hero-section-2 .heading2-sub .sub {
+  background: var(--card-bg);
+  padding: 72px 32px 102px;
+}
+.hero-section-2 .heading2-sub .sub p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 32px 0 24px;
+}
+.hero-section-2 .heading2-sub .sub a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--red-2);
+}
+
+footer .footer-links .footer-heading, footer .footer-links .socials-heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 40px 0 16px;
+}
+footer .footer-links a {
+  color: var(--red-2);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .footer-links .links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer-links .address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+footer .footer-links .mail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+footer .footer-links .socials-container {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-links .socials-container img {
+  width: 20px;
+}
+footer .copyright {
+  margin: 88px 0 102px;
+  border-top: 1px solid var(--black);
+}
+footer .copyright p {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 770px) {
+  .hero-bg {
+    padding-top: 80px;
+  }
+  .hero-section .cta {
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  footer .logo {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header {
+    margin: 80px 0;
+  }
+  .hero-section {
+    padding-bottom: 260px;
+  }
+  .hero-section h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .hero-section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 800px;
+  }
+  .hero-section p .red-text {
+    color: var(--red);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .hero-section-2 .heading2-sub-text {
+    font-size: 14px;
+  }
+  .hero-section-2 .heading2-text {
+    font-size: 18px;
+  }
+  .hero-section-2 .heading2-sub-text, .hero-section-2 .heading2-text {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .hero-section-2 .heading2-sub {
+    margin-top: 48px;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .hero-section-2 .heading2-sub .sub {
+    padding: 24px 12px;
+  }
+  .hero-section-2 .heading2-sub .sub img {
+    height: 50px;
+  }
+  .hero-section-2 .heading2-sub .sub p {
+    font-size: 13px;
+    padding: 16px 0;
+  }
+  .hero-section-2 .heading2-sub .sub a {
+    font-size: 13px;
+  }
+  footer {
+    margin-top: 120px;
+  }
+  footer .footer-links .footer-heading, footer .footer-links .socials-heading {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  footer .footer-links a {
+    font-size: 12px;
+  }
+  footer .footer-links .address {
+    font-size: 12px;
+  }
+  footer .footer-links .mail {
+    font-size: 12px;
+  }
+  footer .copyright p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
