@@ -1,82 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Zuri Talent</title>
-</head>
-<body>
-    
-    <!-- Container -->
-    <div class="container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css" />
+        <title>Zuri Talent</title>
+    </head>
+    <body>
 
-        <header>
-            <!-- Logo -->
-            <a href="#" class="logo"><img src="images/logo.svg" alt="Zuri Talent logo"></a>
+        <!-- Header -->
+        <header id="navbar">
+            <div class="container header-container">
 
-            <!-- Nav Links -->
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Impact</a>
-                <a href="#">Why Us</a>
-            </nav>
+                <!-- Logo -->
+                <a href="./index.html" class="logo"><img src="images/logo.svg" alt="Zuri Talent logo" /></a>
 
-            <!-- CTA -->
-            <a href="#" class="pty-cta">Hire Talents</a>
+                <div class="nav-right">
+                    <!-- Nav Links -->
+                    <nav>
+                        <a href="#navbar">Home</a>
+                        <a href="#hero">Impact</a>
+                        <a href="#why">Why Us</a>
+                    </nav>
+
+                    <!-- CTA -->
+                    <a href="#" class="pry-cta">Hire Talents</a>
+                </div>
+            </div>
         </header>
-
 
         <!-- Hero Section -->
         <section class="hero-section hero-section-1">
+           <div class="container hero-container">
 
-            <!-- Hero Text -->
-            <div class="hero-text">
-                <h1 class="hero-heading">Vetted and Trusted <span class="red-text">talents</span></h1>
-                <p class="hero-text">At Zuri Team, we train, test and place talent in various industries. We have access to the best pool of skills in the tech Industry.</p>
+                <!-- Hero Text -->
+                <div class="hero-texts" id="hero">
+                    <h1 class="hero-heading">Vetted and Trusted <span class="red-text">talents</span></h1>
+                    <p class="hero-text">At Zuri Team, we train, test and place talent in various industries. We have access to the best pool of skills in the tech Industry.</p>
 
-                <!-- Hero - CTA -->
-                <div class="hero-cta">
-                    <a class="pry-cta" href="#">Hire Talent</a>
-                    <a class="sec-cta" href="#">Join Talent pool</a>
+                    <!-- Hero - CTA -->
+                    <div class="hero-cta">
+                        <a class="pry-cta cta" href="#">Hire Talent</a>
+                        <a class="sec-cta cta" href="#">Join Talent pool</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Hero Image -->
-            <img src="images/hero-img.png" alt="">
+                <!-- Hero Image -->
+                <img src="images/hero-img.png" alt="Hero image" />
+           </div>
         </section>
 
 
         <!-- Hero Section 2 -->
         <section class="hero-section hero-section-2">
-            <!-- Hero Text -->
-            <div class="hero-text">
-                <h1 class="hero-heading">We have impacted the lives of <span class="red-text">thousands</span> around the world</h1>
-                <p class="hero-text-bold">6000 trained in 14 months</p>
-                <p class="hero-text-light">Talent Placed in 5 countries</p>
+            <div class="container hero-container">
 
-                <!-- Countries image -->
-                <div class="image-container">
-                    <img src="images/germany.svg" alt="Germany flag">
-                    <img src="images/england.svg" alt="England flag">
-                    <img src="images/india.svg" alt="India flag">
-                    <img src="images/nigeria.svg" alt="Nigeria flag">
-                    <img src="images/usa.svg" alt="USA flag">
+                <!-- Hero Text -->
+                <div class="hero-text" id="hero">
+                    <h1 class="hero-heading">We have impacted the lives of <span class="red-text">thousands</span> around the world</h1>
+                    <p class="hero-text-bold">6000 trained in 14 months</p>
+                    <p class="hero-text-light">Talent Placed in 5 countries</p>
+
+                    <!-- Countries image -->
+                    <div class="image-container">
+
+                        <div class="img-cont">
+                            <img src="images/germany.svg" alt="Germany flag" />
+                        </div>
+
+                        <div class="img-cont">
+                            <img src="images/england.svg" alt="England flag" />
+                        </div>
+
+                        <div class="img-cont">
+                            <img src="images/india.svg" alt="India flag" />
+                        </div>
+
+                        <div class="img-cont">
+                            <img src="images/nigeria.svg" alt="Nigeria flag" />
+                        </div>
+
+                        <div class="img-cont">
+                            <img src="images/usa.svg" alt="USA flag" />
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Hero Image -->
-            <img src="images/hero-section2-img.png" alt="">
+                <!-- Hero Image -->
+                <img class="hero-img-2" src="images/hero-section2-img.png" alt="" />
+            </div>
         </section>
 
 
         <!-- Talent Skills -->
-        <section class="hero-section talent-skills">
-                <h1 class="hero-heading">Skills of our <span>talents</span> that you will need</h1>
+        <section class="talent-skills">
+            <div class="container">
+                <h1 class="hero-heading">Skills of our <span class="red-text">talents</span> that you will need</h1>
 
                 <!-- Skills set -->
-                <div class="skills-set">
+                <div class="skills-set skills-work">
                     <button>UI/UX Designers</button>
                     <button>Backend Developers</button>
                     <button>DevOps Engineers</button>
@@ -84,10 +110,10 @@
                 </div>
 
                 <!-- Where our talents work -->
-                <h1>Where our talents work</h1>
+                <h1 class="hero-heading">Where our talents work</h1>
 
                 <!-- Work -->
-                <div class="work">
+                <div class="work skills-work">
                     <button>GitHub</button>
                     <button>Microsoft</button>
                     <button>Reskill Americans</button>
@@ -95,76 +121,94 @@
                     <button>Google</button>
                     <button>Career Transitioners</button>
                 </div>
+            </div>
         </section>
 
 
         <!-- Why hire out talents -->
-        <section class="why-hire">
-            <h1 class="hero-heading">Wht hire our <span>Talents</span></h1>
+        <section class="why-hire" id="why">
+            <div class="container">
+                <h1 class="hero-heading">Why hire our <span class="red-text">Talents</span></h1>
 
-            <!-- Reasons to hire -->
-            <div class="reasons-container">
-                <div class="reason">
-                    <img src="images/people.svg" alt="People Image">
-                    <p>Zuri Team has a highly skilled set of talents that are built on referral and successful partnerships.</p>
-                </div>
-            </div>
+                <!-- Reasons to hire -->
+                 <div class="reasons-container">
+                    <div class="reason">
+                        <img src="images/people.svg" alt="People Image" />
+                        <p>Zuri Team has a highly skilled set of talents that are built on referral and successful partnerships.</p>
+                    </div>
+                
 
-            <div class="reasons-container">
-                <div class="reason">
-                    <img src="images/mech.svg" alt="Mech Image">
-                    <p>Our recruiters are exceptionally skilled in identifying top talent around the globe and matching them with the client's needs.</p>
-                </div>
-            </div>
+                    <div class="reason">
+                        <img src="images/mech.svg" alt="Mech Image" />
+                        <p>Our recruiters are exceptionally skilled in identifying top talent around the globe and matching them with the client's needs.</p>
+                    </div>
 
-            <div class="reasons-container">
-                <div class="reason">
-                    <img src="images/hand.svg" alt="Hand Image">
-                    <p>We have an 85% fill ratio for every open position we partner for.</p>
-                </div>
-            </div>
+                    <div class="reason">
+                        <img src="images/hand.svg" alt="Hand Image" />
+                        <p>We have an 85% fill ratio for every open position we partner for.</p>
+                    </div>
 
-            <div class="reasons-container">
-                <div class="reason">
-                    <img src="images/write.svg" alt="Write Image">
-                    <p>Contract renewal rate for our consultant is 90 percent.</p>
-                </div>
-            </div>
+                    <div class="reason">
+                        <img src="images/write.svg" alt="Write Image" />
+                        <p>Contract renewal rate for our consultant is 90 percent.</p>
+                    </div>
 
-            <div class="reasons-container">
-                <div class="reason">
-                    <img src="images/many.svg" alt="Many Image">
-                    <p>60% of our consultants are converted to full-time employees.</p>
+                    <div class="reason">
+                        <img src="images/many.svg" alt="Many Image" />
+                        <p>60% of our consultants are converted to full-time employees.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- CTA -->
-            <div class="hero-cta">
-                <a class="pry-cta" href="#">Hire Talent</a>
-                <a class="sec-cta" href="#">Join Talent pool</a>
+
+                <!-- CTA -->
+                <div class="hero-cta">
+                    <a class="pry-cta" href="#">Hire Talent</a>
+                    <a class="sec-cta" href="#">Join Talent pool</a>
+                </div>
             </div>
         </section>
 
-        <footer>
-            <!-- Logo and copyright -->
-            <div class="logo-copyright">
-                <a href="#" class="logo"><img src="images/footer-logo.svg" alt="Zuri Talent logo"></a>
-                <p class="copyright">© Copyright 2022 ZURI TEAM. All rights Reserved</p>
-            </div>
 
-            <!-- Social Media -->
-            <div class="socials-container">
-                <div class="socials">
-                    <a href="#"><img src="images/facebook.svg" alt="Facebook image"></a>
-                    <a href="#"><img src="images/linkedIn.svg" alt="LinkedIn image"></a> 
-                    <a href="#"><img src="images/twitter.png" alt="Twitter image"></a>
-                    <a href="#"><img src="images/youtube.svg" alt="youtube image"></a>
+        <!-- Footer -->
+        <footer>
+           <div class="container footer-container">
+
+                <!-- Logo and copyright -->
+                <div class="logo-socials">
+                    <a href="#" class="logo"><img src="images/footer-logo.svg" alt="Zuri Talent logo" /></a>
+                    
+                    <!-- Socials -->
+                    <div class="socials">
+                        <a href="#"><img src="images/facebook.svg" alt="Facebook image" /></a>
+                        <a href="#"><img src="images/linkedIn.svg" alt="LinkedIn image" /></a>
+                        <a href="#"><img src="images/twitter.png" alt="Twitter image" /></a>
+                        <a class="img-sz" href="#"><img src="images/youtube.svg" alt="youtube image" /></a>
+                    </div>
+
+                    <!-- Mail -->
+                    <div class="mail">
+                        <a href="mailto:talent@zuri.team">talent@zuri.team</a>
+                    </div>
+
+
+                    <!-- Copyright -->
+                    <p class="copyright">© Copyright 2022 ZURI TEAM. All rights Reserved</p>
                 </div>
 
-                <!-- Email -->
-                <a class="mail" href="mailto:talent@zuri.team">talent@zuri.team</a>
-            </div>
+                <div class="web-extra">
+                    <!-- Socials -->
+                    <div class="socials">
+                        <a href="#"><img src="images/facebook.svg" alt="Facebook image" /></a>
+                        <a href="#"><img src="images/linkedIn.svg" alt="LinkedIn image" /></a>
+                        <a href="#"><img src="images/twitter.png" alt="Twitter image" /></a>
+                        <a class="img-sz" href="#"><img src="images/youtube.svg" alt="youtube image" /></a>
+                    </div>
+
+                    <!-- Mail -->
+                    <div class="mail">
+                        <a href="mailto:talent@zuri.team">talent@zuri.team</a>
+                    </div>
+                </div>
+           </div>
         </footer>
-    </div>
-</body>
+    </body>
 </html>

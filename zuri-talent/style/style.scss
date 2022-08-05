@@ -1,0 +1,617 @@
+:root {
+    // Colors
+    --red: #e7332b;
+    --black: #161617;
+    --black2: #161617;
+    --grey: #787878;
+    --grey2: #808080;
+    --grey-bg: #image.png;
+    --white: #ffffff;
+    --cream: #fff8e5;
+
+
+    // Font
+    --font: 'Montserrat', sans-serif;;
+}   
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: var(--grey);
+    font-family: var(--font);
+
+    a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        padding: 8px 16px;
+        border-radius: 0 0 8px 0;
+    }
+}
+
+// Container
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+// Header
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+    // Header container
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        
+
+        // Navbar
+        .nav-right {
+            display: flex;
+
+            nav {
+                display: none;
+            }
+
+            // HIre Talent CTA
+            .pry-cta {
+                background: var(--red);
+                color: white;
+                border-radius: 0 0 8px 0;
+                padding: 8px 16px;
+            }
+            
+        }
+        
+    }
+}
+
+
+// Hero Section 1
+.hero-section-1 {
+
+    .hero-container {
+        margin-top: 200px;
+        text-align: center;
+        
+
+        // Hero Text 
+        .hero-heading{
+            font-size: 40px;
+            line-height: 49px;
+            font-weight: 800;
+            color: var(--black);
+
+            .red-text {
+                color: var(--red);
+            }
+        }
+
+        .hero-text {
+            margin: 32px auto 24px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            max-width: 620px;
+        }
+        
+        // CTA
+        .hero-cta {
+            .pry-cta {
+                background: var(--red);
+            }
+
+            .sec-cta {
+                background: var(--grey);
+            }
+        }
+
+        img {
+            width: 70%;
+            max-width: 1200px;
+            margin: 60px auto 0;
+        }
+    }
+}
+
+
+// Hero Section 2
+.hero-section-2 {
+    
+    background-image: url("../images/hero2-bg.png");
+    height: 1000px;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    .hero-container {
+        padding: 100px 0;
+        text-align: center;
+    }
+    .hero-heading {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--black);
+
+        .red-text {
+            color: var(--red);
+        }
+    }
+
+    .hero-text-bold {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 22px;
+        margin: 16px 0 8px;
+        color: var(--black);
+    }
+
+    .hero-text-light {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        gap: 26px;
+
+        .img-cont {
+            background: var(--white);
+            padding: 8px 0 4px;
+        }
+    }
+
+    .hero-img-2 {
+        width: 70%;
+        max-width: 1200px;
+        margin: 32px auto 0;
+    }
+}
+
+
+// Talents and Skills 
+.talent-skills {
+    padding: 88px 0;
+    background: var(--white);
+
+
+   .hero-heading {
+        text-align: center;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 49px;
+        color: var(--black);
+
+        .red-text {
+            color: var(--red);
+        }
+   }
+
+   .skills-work {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 32px 0;
+
+        button {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 33px;
+            color: var(--grey);
+            background: var(--white);
+            border: 0;
+            border-radius: 4px;
+            padding: 8px 16px;
+            box-shadow: 10px 10px 8px #e7e7e7;
+        }
+   }
+
+   .skills-work {
+        margin-bottom: 80px;
+   }
+}
+
+
+// Talent Section
+.why-hire {
+    background: var(--cream);
+    padding: 104px 0 80px;
+    text-align: center;
+
+    .hero-heading {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 49px;
+        color: var(--black);
+
+        .red-text {
+            color: var(--red);
+        }
+    }
+
+    .reasons-container {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 52px;
+
+        .reason {
+            background: var(--white);
+            padding: 60px 10px;
+
+            img {
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .hero-cta {
+
+        margin-top: 48px;
+
+        .pry-cta {
+            background: var(--red);
+        }
+    
+        .sec-cta {
+            background: var(--grey);
+        }
+    }
+      
+
+}
+
+
+footer {
+    background: var(--black2);
+    padding-top: 56px;
+
+    .footer-container {
+        text-align: center;
+        
+        .logo-socials {
+            
+            .socials {
+                // display: flex;
+                // flex-direction: column;
+                padding: 24px 0 32px;
+                
+                img {
+                    width: 24px;
+                }
+
+                
+                .copyright {
+                    padding: 24px;
+                }
+            }
+
+            .mail {
+                border-bottom: 1px solid var(--red);
+                padding: 24px 0 24px;
+            }
+
+            .copyright {
+                margin-top: 32px;
+                font-size: 16px;
+                font-weight: 800;
+                line-height: 22px;
+            }
+        }
+
+        .web-extra {
+            display: none;
+        }
+    }
+}
+
+ 
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .why-hire {
+        .reasons-container {
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .reason:last-child {
+            grid-column: 1 / -1;
+        }
+    }
+
+
+
+    // Footer
+    footer {
+        padding-top: 8px;
+    
+        .footer-container {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            
+            .logo-socials {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                a {
+                    margin-top: 16px;
+                }
+                
+                .socials {
+                    padding: 0;
+                    display: none;
+                   
+                    .copyright {
+                        padding: 24px;
+                    }
+                }
+                
+                .mail {
+                    border: none;
+                    padding: 24px 0 24px;
+                    display: none;
+                }
+    
+                .copyright {
+                    padding: 8px;
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 22px;
+                }
+            }
+
+           
+            .web-extra {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .socials {
+                    padding: 24px 0 32px;
+                    
+                    img {
+                        width: 24px;
+                    }
+    
+                    
+                    .copyright {
+                        padding: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+     
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+    // Header
+    header {
+    
+        // Header container
+        .header-container {
+            align-items: center;
+            
+            .nav-right {
+    
+                nav {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        margin-right: 20px;
+                        color: var(--grey);
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        // Why Hire
+        .why-hire {
+        
+            .reasons-container {
+                .reason {
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .hero-section-2 {
+    
+        background-image: url("../images/hero2-bg.png");
+        height: 550px;
+        background-position: center;
+        
+        .hero-container {
+            padding: 100px 0;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hero-heading {
+            font-size: 30px;
+            line-height: 40px;
+            max-width: 420px;
+            margin-top: 32px;
+        }
+    
+        .image-container {
+            justify-content: left;
+        }
+    
+        .hero-img-2 {
+            width: 40%;
+            max-width: 1200px;
+            margin: 0;
+        }
+    }
+
+
+    // Talents and Skills 
+    .talent-skills {
+
+        .hero-heading {
+                text-align: left;
+        }
+
+        .skills-work {
+                justify-content: left;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    // Hero Section 1
+    .hero-section-1 {
+
+        .hero-container {
+            display: flex;
+            margin-top: 200px;
+            text-align: left;
+            
+
+            // Hero Text 
+            .hero-heading {
+                font-size: 40px;
+                line-height: 49px;
+                font-weight: 800;
+                color: var(--black);
+                margin-top: 60px;
+
+                .red-text {
+                    color: var(--red);
+                }
+            }
+
+            .hero-text {
+                margin: 32px 0 40px;
+                font-size: 19px;
+                max-width: 450px;
+                line-height: 30px;
+            }
+            
+            // CTA
+            .hero-cta {
+                .cta {
+                    padding: 16px 40px;
+                }
+
+                .pry-cta {
+                    background: var(--red);
+                    margin-right: 8px;
+                }
+
+                .sec-cta {
+                    background: var(--grey);
+                }
+            }
+
+            img {
+                width: 40%;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .hero-section-2 {
+        height: 650px;
+        
+        .hero-heading {
+            font-size: 40px;
+            line-height: 49px;
+            max-width: 620px;
+            margin-top: 40px;
+        }
+
+        .hero-img-2 {
+            width: 35%;
+            margin: 0;
+        }
+    }  
+    
+      // Talents and Skills 
+    .talent-skills {
+
+        .hero-heading {
+            font-size: 40px;
+            width: 580px;
+        }
+        
+    }
+
+    // Why Hire
+    .why-hire {
+        .hero-heading {
+            font-size: 40px;
+            line-height: 49px;
+            font-weight: 800;
+        }
+
+        .reasons-container {
+            grid-template-columns: repeat(3, 1fr);
+            .reason {
+                p {
+                    font-size: 17px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+            }
+
+            .reason:last-child {
+                grid-column: 2;
+            }
+        }
+    }
+}
