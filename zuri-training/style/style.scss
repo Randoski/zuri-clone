@@ -1,0 +1,26 @@
+:root {
+    // Colors
+    --red: #e7332b;
+    --black: #1b1a20;
+    --black2: #161617;
+    --grey: #585757;
+    --green: #43b97f;
+    --border-color: rgba(71,44,111,.43)
+    --white: #ffffff;
+    
+    // Font
+    --font: 'Montserrat', sans-serif;;
+} 
+             
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    // color: var(--grey);
+    font-family: var(--font);
+
+}
