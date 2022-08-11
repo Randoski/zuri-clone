@@ -30,7 +30,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -171,11 +171,12 @@ header .header-container .nav-right .nav-cta .pry-cta {
   padding: 0 24px 0 24px;
   border-radius: 16px;
   background: var(--white);
+  position: relative;
 }
 .why-zuri .why-zuri-container .reasons-container .reason .reason-image {
   position: absolute;
   width: 150px;
-  right: 24px;
+  right: 0;
 }
 .why-zuri .why-zuri-container .reasons-container .reason .reason-num {
   font-size: 44px;
@@ -235,6 +236,7 @@ header .header-container .nav-right .nav-cta .pry-cta {
   flex-direction: row;
   gap: 6%;
   margin-top: 32px;
+  margin-right: 60px;
 }
 .get-started .get-started-container .hero-texts .benefits button {
   display: flex;
@@ -242,7 +244,8 @@ header .header-container .nav-right .nav-cta .pry-cta {
   border: 1px solid var(--white);
   background: transparent;
   border-radius: 40px;
-  width: 47%;
+  width: 48%;
+  max-width: 300px;
   padding: 8px 0 8px 8px;
   gap: 10px;
 }
@@ -340,14 +343,17 @@ header .header-container .nav-right .nav-cta .pry-cta {
   padding: 24px;
   align-items: flex-start;
 }
-.faq .faq-container .faq-main-container .q-and-a-container .question {
+.faq .faq-container .faq-main-container .q-and-a-container .q-and-a {
+  width: 100%;
+}
+.faq .faq-container .faq-main-container .q-and-a-container .q-and-a .question {
   font-size: 16px;
   line-height: 21px;
   font-weight: 600;
   color: var(--grey2);
   margin-bottom: 8px;
 }
-.faq .faq-container .faq-main-container .q-and-a-container .answer {
+.faq .faq-container .faq-main-container .q-and-a-container .q-and-a .answer {
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
@@ -451,10 +457,9 @@ header .header-container .nav-right .nav-cta .pry-cta {
   margin-bottom: 32px;
 }
 
-.get-started2 {
-  background: var(--red);
-}
 .get-started2 .get-started-container2 {
+  background: var(--red);
+  border-radius: 56px;
   padding: 80px;
   text-align: center;
 }
@@ -475,6 +480,7 @@ header .header-container .nav-right .nav-cta .pry-cta {
 }
 
 footer {
+  margin-top: 56px;
   background: var(--white);
   padding-top: 72px;
 }
@@ -515,4 +521,262 @@ footer .footer-container .logo-socials .copyright {
 }
 footer .footer-container .web-extra {
   display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .powered-by .right-launch {
+    text-align: right;
+    word-wrap: break-word;
+  }
+  footer {
+    padding-top: 8px;
+  }
+  footer .footer-container {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-container .logo-socials {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  footer .footer-container .logo-socials a {
+    margin-top: 16px;
+  }
+  footer .footer-container .logo-socials .socials {
+    padding: 0;
+    display: none;
+  }
+  footer .footer-container .logo-socials .socials .copyright {
+    padding: 24px;
+  }
+  footer .footer-container .logo-socials .privacy-and-ingressive {
+    border: none;
+    padding: 24px 0 24px;
+    display: none;
+  }
+  footer .footer-container .logo-socials .copyright {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+  }
+  footer .footer-container .web-extra {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-container .web-extra .socials {
+    display: flex;
+    gap: 24px;
+  }
+  footer .footer-container .web-extra .socials img {
+    width: 48px;
+    gap: 50px;
+  }
+  footer .footer-container .web-extra .socials .copyright {
+    padding: 24px;
+  }
+  footer .footer-container .web-extra .privacy-and-ingressive {
+    display: flex;
+    gap: 16px;
+    border-bottom: none;
+    padding-bottom: 48px;
+    margin-top: 64px;
+  }
+  footer .footer-container .web-extra .privacy-and-ingressive a {
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    align-self: bottom;
+  }
+}
+@media screen and (min-width: 900px) {
+  .powered-by {
+    margin-top: 48px;
+  }
+  .powered-by .powered-container {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .powered-by .powered-container .left-launch {
+    text-align: left;
+    width: 30%;
+  }
+  .powered-by .powered-container .right-launch {
+    width: 500px;
+    width: 40%;
+  }
+  .powered-by .powered-container img {
+    width: 20%;
+    max-width: 100%;
+  }
+  .why-zuri {
+    padding: 64px 0 120px;
+    background: var(--off-white2);
+  }
+  .why-zuri .why-zuri-container .hero-texts .why {
+    font-size: 18px;
+  }
+  .why-zuri .why-zuri-container .hero-texts .why-heading {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+  }
+  .why-zuri .why-zuri-container .reasons-container {
+    flex-direction: row;
+    gap: 4%;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+  .why-zuri .why-zuri-container .reasons-container .reason {
+    width: 48%;
+    margin-top: 24px;
+  }
+  .why-zuri .why-zuri-container .reasons-container .reason:first-child {
+    background: var(--red);
+    color: var(--white);
+  }
+  .get-started {
+    margin-top: 48px;
+  }
+  .get-started .get-started-container .hero-texts .benefits {
+    flex-direction: row;
+    gap: 2%;
+    margin-top: 32px;
+    margin-right: 60px;
+  }
+  .get-started .get-started-container .hero-texts .benefits button {
+    display: flex;
+    width: 23%;
+    padding: 8px;
+  }
+  .get-started .get-started-container .hero-texts .benefits .btn-extra {
+    margin-top: 0;
+  }
+  .program-scope .program-scope-container .stack-container {
+    margin: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4%;
+    row-gap: 24px;
+  }
+  .program-scope .program-scope-container .stack-container .stack {
+    width: 48%;
+  }
+  .get-started2 .get-started-container2 .hero-texts .sub-text {
+    color: var(--white);
+    font-size: 18px;
+  }
+  .get-started2 .get-started-container2 .hero-texts .hero-heading {
+    color: var(--white);
+    font-size: 55px;
+    line-height: 72px;
+    margin: 16px auto 32px;
+    width: 600px;
+  }
+  .get-started2 .get-started-container2 .hero-texts .pry-cta {
+    background: var(--white);
+    color: var(--red);
+  }
+}
+@media screen and (min-width: 1000px) {
+  header .header-container .nav-right nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 20px;
+  }
+  header .header-container .nav-right nav a {
+    text-decoration: none;
+    color: var(--grey);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 64px;
+  }
+  .hero-section .hero-container {
+    flex-direction: row;
+  }
+  .hero-section .hero-container .hero-texts {
+    width: 60%;
+  }
+  .hero-section .hero-container .hero-texts .sub-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .hero-section .hero-container .hero-texts .hero-heading {
+    margin: 8px 0 24px;
+    font-size: 49px;
+    line-height: 54px;
+    font-weight: 700;
+  }
+  .hero-section .hero-container .hero-texts .hero-text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    width: 500px;
+    text-align: center;
+    margin: 24px auto 42px;
+  }
+  .hero-section .hero-container img {
+    width: 25%;
+  }
+  .hero-section .hero-container .right-hero-img {
+    display: block;
+  }
+  .why-zuri {
+    padding: 64px 0 120px;
+    background: var(--off-white2);
+  }
+  .why-zuri .why-zuri-container .hero-texts .why {
+    font-size: 18px;
+  }
+  .why-zuri .why-zuri-container .hero-texts .why-heading {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+  }
+  .why-zuri .why-zuri-container .reasons-container {
+    flex-direction: row;
+    gap: 2%;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+  .why-zuri .why-zuri-container .reasons-container .reason {
+    width: 32%;
+  }
+  .program-scope .program-scope-container .stack-container {
+    margin: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2%;
+    row-gap: 24px;
+  }
+  .program-scope .program-scope-container .stack-container .stack {
+    width: 32%;
+  }
+  .program-structure .part-time-and-full-time {
+    flex-direction: row;
+    gap: 2%;
+  }
+  .program-structure .part-time-and-full-time .structure {
+    padding: 48px 32px;
+    width: 48%;
+  }
+  .program-structure .part-time-and-full-time .part-time .tracks .track-extra-sty {
+    margin-bottom: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */

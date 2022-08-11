@@ -37,7 +37,7 @@ body {
 // Container
 .container {
     width: 90%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -259,12 +259,13 @@ header {
                 padding: 0 24px 0 24px;
                 border-radius: 16px;
                 background: var(--white);
+                position: relative;
                 // Reason Image
 
                 .reason-image {
                     position: absolute;
                     width: 150px;
-                    right: 24px;
+                    right: 0;
                 }
 
                 // .reason Number
@@ -347,6 +348,7 @@ header {
                 flex-direction: row;
                 gap: 6%;
                 margin-top: 32px;
+                margin-right: 60px;
 
                 button {
                     display: flex;
@@ -354,7 +356,8 @@ header {
                     border: 1px solid var(--white);
                     background: transparent;
                     border-radius: 40px;
-                    width: 47%;
+                    width: 48%;
+                    max-width: 300px;
                     padding: 8px 0 8px 8px;
                     gap: 10px;
 
@@ -478,20 +481,24 @@ header {
                 padding: 24px;
                 align-items: flex-start;
 
-                .question {
-                    font-size: 16px;
-                    line-height: 21px;
-                    font-weight: 600;
-                    color: var(--grey2);
-                    margin-bottom: 8px;
-                }
+               .q-and-a {
 
-                .answer {
-                    font-size: 14px;
-                    line-height: 22px;
-                    font-weight: 400;
-                    color: var(--black3);
-                }
+                    width: 100%;
+                    .question {
+                        font-size: 16px;
+                        line-height: 21px;
+                        font-weight: 600;
+                        color: var(--grey2);
+                        margin-bottom: 8px;
+                    }
+
+                    .answer {
+                        font-size: 14px;
+                        line-height: 22px;
+                        font-weight: 400;
+                        color: var(--black3);
+                    }
+               }
 
                 img {
                     width: 24px;
@@ -639,9 +646,10 @@ header {
 
 // Get Started 2
 .get-started2 {
-    background: var(--red);
     
     .get-started-container2 {
+        background: var(--red);
+        border-radius: 56px;
         padding: 80px;
         text-align: center;
         
@@ -670,6 +678,7 @@ header {
 
 // Footer 
 footer {
+    margin-top: 56px;
     background: var(--white);
     padding-top: 72px;
 
@@ -723,6 +732,585 @@ footer {
 
         .web-extra {
             display: none;
+        }
+    }
+}
+
+
+
+// Media Queries
+@media screen and (min-width: 600px) {
+    .powered-by {
+        .right-launch {
+            text-align: right;
+            word-wrap: break-word;
+        }
+    }
+
+    // Footer
+    footer {
+        padding-top: 8px;
+    
+        .footer-container {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            
+            .logo-socials {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                a {
+                     margin-top: 16px;
+                }
+                
+                .socials {
+                    padding: 0;
+                    display: none;
+                   
+                    .copyright {
+                        padding: 24px;
+                    }
+                }
+                
+                .privacy-and-ingressive {
+                    border: none;
+                    padding: 24px 0 24px;
+                    display: none;
+                }
+    
+                .copyright {
+                    padding: 8px;
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 22px;
+                }
+            }
+
+           
+            .web-extra {
+                display: flex;
+                flex-direction: column;
+
+                .socials {
+                    display: flex;
+                    gap: 24px;
+                    
+                    img {
+                        width: 48px;
+                        gap: 50px;
+                    }
+    
+                    
+                    .copyright {
+                        padding: 24px;
+                    }
+                }
+
+                .privacy-and-ingressive {
+                    display: flex;
+                    gap: 16px;
+                    border-bottom: none;
+                    padding-bottom: 48px;
+                    margin-top: 64px;
+    
+                    a {
+                        color: var(--grey);
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        align-self: bottom;
+                    }
+    
+                }
+            }
+
+          
+        }
+    }    
+}
+
+@media screen and (min-width: 900px) {
+
+    // Powered by
+    .powered-by {
+        margin-top: 48px;
+
+        .powered-container {
+            margin-top: 0;
+            padding-top: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .left-launch {
+                text-align: left;
+                width: 30%;
+            }
+
+            .right-launch {
+                width: 500px;
+                width: 40%;
+            }
+
+            img {
+                width: 20%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    // Why zuri
+    .why-zuri {
+        padding: 64px 0 120px;
+        background: var(--off-white2);
+
+        .why-zuri-container {
+
+            // Hero Texts
+            .hero-texts {
+                .why {
+                    font-size: 18px;
+                }
+
+                .why-heading {
+                    margin-top: 8px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 31px;
+                }
+            }
+
+            .reasons-container {
+                flex-direction: row;
+                gap: 4%;
+                justify-content: space-between;
+                margin-top: 64px;
+                
+                // Reason
+                .reason {
+                    width: 48%;
+                    margin-top: 24px;
+
+
+                    // Reason Image
+
+                    // .reason Number
+                    // .reason-num {
+                    //     font-size: 44px;
+                    //     line-height: 78px;
+                    //     font-weight: 700;
+                    //     margin-top: 24px;
+                    // }
+
+                    // // Reason Heading
+                    // .reason-heading {
+                    //     font-size: 26px;
+                    //     line-height: 34px;
+                    //     font-weight: 700;
+                    //     margin: 32px 0;
+                    //     max-width: 170px;
+                    // }
+
+                    // // Reason text
+                    // .reason-text {
+                    //     font-size: 18px;
+                    //     line-height: 23px;
+                    //     font-weight: 400;
+                    //     margin-bottom: 32px;
+                    // }
+
+                }
+
+                // Reason firs child
+                .reason:first-child {
+                    background: var(--red);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    
+    // Get Started
+    .get-started {
+        margin-top: 48px;
+
+        .get-started-container {
+            .hero-texts {
+
+                // Sub text
+                // .sub-text {
+                //     color: var(--white);
+                //     font-size: 18px;
+                // }
+
+                // .hero-heading {
+                //     font-size: 28px;
+                //     font-weight: 800;
+                //     line-height: 31px;
+                //     margin-top: 8px;
+                // }
+
+                // .hero-text {
+                //     font-size: 18px;
+                //     line-height: 23px;
+                //     font-weight: 400;
+                //     margin: 32px 0 40px;
+                // }
+
+                // .sec-cta {
+                //     background: var(--white);
+                //     color: var(--red);
+                //     border-radius: 24px;
+                //     padding: 8px 16px 8px 20px;
+                //     text-decoration: none;
+                // }
+
+                .benefits {
+                    flex-direction: row;
+                    gap: 2%;
+                    margin-top: 32px;
+                    margin-right: 60px;
+
+                    button {
+                        display: flex;
+                        width: 23%;
+                        padding: 8px;
+                    }
+
+                    .btn-extra {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // Program Scope
+    .program-scope {
+        
+        .program-scope-container {
+
+            // .hero-texts {
+            //     .sub-text {
+            //         font-size: 18px;
+            //     }
+
+            //     .hero-heading {
+            //         font-size: 24px;
+            //         line-height: 31px;
+            //         font-weight: 700;
+            //         margin-top: 8px;
+            //     }
+            // }
+
+            // Stack Container
+            .stack-container {
+                margin: 80px 0;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 4%;
+                row-gap: 24px;
+                
+                // Stack
+                .stack {
+                    width: 48%;
+
+                    // .stack-heading {
+                    //     font-size: 20px;
+                    //     line-height: 26px;
+                    //     font-weight: 700;
+                    // }
+
+                    // .languages {
+                    //     display: flex;
+                    //     align-items: center;
+                    //     gap: 16px;
+                    //     margin: 16px 0 32px;
+
+                    //     img {
+                    //         width: 32px;
+                    //         gap: 20px;
+                    //     }
+                    // }
+
+                    // p {
+                    //     font-size: 16px;
+                    //     line-height: 22px;
+                    //     font-weight: 400;
+                    // }
+                }
+            }
+
+            // .pry-cta {
+            //     background: var(--red);
+            //     color: var(--white);
+            //     border-radius: 24px;
+            //     padding: 8px 16px 8px 20px;
+            //     text-decoration: none;
+            // }
+        }
+    }
+
+    // Get Started 2
+    .get-started2 {
+        
+        .get-started-container2 {
+            
+            .hero-texts {
+                .sub-text {
+                    color: var(--white);
+                    font-size: 18px;
+                }
+
+                .hero-heading {
+                    color: var(--white);
+                    font-size: 55px;
+                    line-height: 72px;
+                    margin: 16px auto 32px;
+                    width: 600px;
+                }
+
+                .pry-cta {
+                    background: var(--white);
+                    color: var(--red);
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 1000px) {
+
+    // Header
+    header {
+    
+        // Header container
+        .header-container {
+        
+            // Navbar
+            .nav-right {
+
+                nav {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    margin-right: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--grey);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 1200px) {
+
+    // Hero section
+    .hero-section {
+        padding-bottom: 64px;
+
+        // Hero container
+        .hero-container {
+            flex-direction: row;
+            
+            .hero-texts {
+                width: 60%;
+
+                .sub-text {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                // Hero heading
+                .hero-heading {
+                    margin: 8px 0 24px;
+                    font-size: 49px;
+                    line-height: 54px;
+                    font-weight: 700;
+                }
+
+                .hero-text {
+                    margin-bottom: 40px;
+                    font-size: 18px;
+                    line-height: 23px;
+                    font-weight: 400;
+                    width: 500px;
+                    text-align: center;
+                    margin: 24px auto 42px;
+                }
+            }
+
+            img {
+                width: 25%;
+            }
+
+            // Right hero image
+            .right-hero-img {
+                display: block;
+            }
+        }   
+    }
+
+
+    // Why zuri
+    .why-zuri {
+        padding: 64px 0 120px;
+        background: var(--off-white2);
+
+        .why-zuri-container {
+
+            // Hero Texts
+            .hero-texts {
+                .why {
+                    font-size: 18px;
+                }
+
+                .why-heading {
+                    margin-top: 8px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 31px;
+                }
+            }
+
+            .reasons-container {
+                flex-direction: row;
+                gap: 2%;
+                justify-content: space-between;
+                margin-top: 64px;
+
+                .reason {
+                    width: 32%;
+                }
+            }
+        }
+    } 
+
+
+    // Program Scope
+    .program-scope {
+        
+        .program-scope-container {
+
+            // Stack Container
+            .stack-container {
+                margin: 80px 0;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 2%;
+                row-gap: 24px;
+                
+                // Stack
+                .stack {
+                    width: 32%;
+                }
+            }
+        }
+    }   
+    
+    // Program structure
+    .program-structure {
+
+        // .program-structure-container {
+        //     .hero-texts {
+        //         text-align: center;
+                
+        
+        //         .sub-text {
+        //             font-size: 18px;
+        //         }
+
+        //         .hero-heading {
+        //             font-size: 28px;
+        //             font-weight: 700;
+        //             margin: 8px 0 16px;
+        //         }
+
+        //     }
+        // }
+        
+        // Part time and full time
+        .part-time-and-full-time {
+            flex-direction: row;
+            gap: 2%;
+
+            // Structure
+            .structure {
+                padding: 48px 32px;   
+                width: 48%;
+
+                // Structure Heading
+                // .structure-heading {
+                //     font-size: 35px;
+                //     line-height: 46px;
+                //     font-weight: 700;
+                // }
+
+                // // Structure-text
+                // .structure-text {
+                //     font-size: 16px;
+                //     line-height: 22px;
+                //     padding: 24px 0 0;
+                // }
+
+                // // Details heading
+                // .details-heading {
+                //     font-size: 18px;
+                //     line-height: 25px;
+                //     font-weight: 900;
+                //     margin-top: 24px;
+                // }
+
+                // ul {
+                //     li {
+                //         font-size: 16px;
+                //         line-height: 22px;
+                //         font-weight: 400;
+                //         margin-top: 8px;
+                //         margin-left: 16px;
+
+                //         .text-and-clarity {
+                //             display: flex;
+                //             align-items: center;
+                //             gap: 8px;
+
+                //             a {
+                //                 color: var(--white);
+                //                 text-decoration: underline;
+                //             }
+
+                //             img {
+                //                 width: 16px;
+                //             }
+                //         }
+
+                //         .inner-list, ul {
+                //             li {
+                //                 list-style-type: none;
+                //             }
+                //         }
+                //     }
+                // }
+            }
+
+            // Part-time 
+            .part-time {
+                .tracks {
+                    .track-extra-sty {
+                        margin-bottom: 32px;
+                    }
+                }
+            }
         }
     }
 }
